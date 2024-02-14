@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+</head>
+<body>
+<header>
+    <div> <!--Div for NavBar-->
+        <nav class="nav-elements">
+            <ul>
+                <li class="navlink"><a href="">Add Contact</a></li>
+                <li class="navlink"><a href="">Contact List </a></li>
+                <li class="navlink"><a href="">Search Contact </a>
+                    <div class="search-container"> <!--Div for Search for a contact-->
+                        <form action="" >
+                            <input name="search" type="text" placeholder="Tye name of your contact.">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div> <!--Div for Main Form-->
+        <form action="" class="some-class">
+            <label for="fname">First Name:</label>
+            <input name="fname" id = "fname" type="text" placeholder="John" required tabindex="1">
+            <label for="lname">Last Name: </label>
+            <input name="lname" id = "lname" type="text" placeholder=" Doe" required tabindex="2">
+            <label for="email">Email: </label>
+            <input name="email" id = "email" type="email" placeholder="Email here" tabindex="3">
+            <label for="street">Street Address: </label>
+            <input name="street" id = "street" type="text" placeholder="Street Address here" tabindex="4">
+            <label for="city">City: </label>
+            <input name="city" id = "city" type="text" placeholder="City" tabindex="5">
+            <label for="country">Country: </label>
+            <input name="country" id = "country" type="text" placeholder="Country" tabindex="6">
+            <label for="mobile">Mobile Phone: </label>
+            <input name="mobile" id = "mobile" type="text" placeholder="Phone Number" tabindex="7">
+            <div> <!--Div for Contact Type-->    
+                <label for="contactType" >Contact Type: </label>
+                <select tabindex='8' >    
+                    <option value="friend">Friend</option>
+                    <option value="family">Family</option>
+                    <option value="work">Work</option>
+                </select>
+            </div>
+            <br>
+          </form>
+            <div>
+                <button id="submit" tabindex="9">Submit</button>
+            </div>
+        </form>
+    </div>    
+
+</header>
+</body>
+</html>
